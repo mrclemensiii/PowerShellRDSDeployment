@@ -374,7 +374,7 @@ if($config.HADeployment -like "Yes"){
     #Join ConnectionBroker02
     Invoke-Command -ComputerName $config.ConnectionBroker02 -ScriptBlock {
         <#
-        Don't know why, but pre installing the RDS-Connection-Broker role prevents the error: The server BR2.rdsfarm.lab has to be same OS version as the active RD Connection Broker server BR1.rdsfarm.lab: Microsoft Windows Server 2016 Standard.
+        Don't know why, but pre installing the RDS-Connection-Broker role prevents the error: The server BR2.clemensfamily.org has to be same OS version as the active RD Connection Broker server BR1.clemensfamily.org: Microsoft Windows Server 2016 Standard.
         #>
         Install-WindowsFeature RDS-Connection-Broker
     }
